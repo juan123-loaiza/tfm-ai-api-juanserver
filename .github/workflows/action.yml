@@ -1,0 +1,26 @@
+name: Deploy Backend to VPS
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Deploy via SSH
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ '165.245.251.242' }}
+          username: ${{ 'juanes' }}
+          key: ${{ 'ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJMBI27u0IZi2/Cf48vU/YD7GmiPSTS0CXxs9jQfZ01k juanes@ubuntu-juanpracticas' }}
+          script: |
+            cd /home/juanes/repositories/tfm-ai-api-juanserver
+            git pull
+            cd /home/juanes/repositories
+            docker compose up -d --no-deps --build backend
