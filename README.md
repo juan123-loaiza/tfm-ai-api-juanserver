@@ -2,7 +2,7 @@
 
 API REST desarrollada con FastAPI para integrar Claude AI como asistente de turismo de las Islas Canarias, implementando un sistema RAG (Retrieval-Augmented Generation) simple que utiliza datos estadísticos turísticos reales.
 
-## 📋 Características
+## 📋 Características fadadasd
 
 - **Asistente IA especializado**: Claude Haiku 4.5 configurado específicamente para turismo en Canarias
 - **Sistema RAG simple**: Recuperación de datos relevantes basada en la consulta del usuario
