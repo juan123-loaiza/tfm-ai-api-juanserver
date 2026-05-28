@@ -18,7 +18,7 @@ jobs:
         with:
           host: ${{ '165.245.251.242' }}
           username: ${{ 'juanes' }}
-          key: ${{ 'ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJMBI27u0IZi2/Cf48vU/YD7GmiPSTS0CXxs9jQfZ01k juanes@ubuntu-juanpracticas' }}
+          key: ${{ '-----BEGIN OPENSSH PRIVATE KEY-----b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZWQyNTUxOQAAACCTASNu7tCGYtvwn+PL1P2A+xpoj0k0tAl8bPY0H2dNZAAAAKB94jK1feIytQAAAAtzc2gtZWQyNTUxOQAAACCTASNu7tCGYtvwn+PL1P2A+xpoj0k0tAl8bPY0H2dNZAAAAEAYZlue8KXsXRybAxqGHcZcE7eHcGlwtgYeYHhze/FNMJMBI27u0IZi2/Cf48vU/YD7GmiPSTS0CXxs9jQfZ01kAAAAG2p1YW5lc0B1YnVudHUtanVhbnByYWN0aWNhcwEC-----END OPENSSH PRIVATE KEY-----' }}
           script: |
             cd /home/juanes/repositories/tfm-ai-api-juanserver
             git pull
