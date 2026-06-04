@@ -20,8 +20,8 @@ jobs:
           username: ${{ secrets.VPS_USER }}
           key: ${{ secrets.VPS_SSH_KEY }}
           script: |
-            cd /home/juanes/repositories/repos_dev/dev-backend
+            cd /home/juanes/repositories/repos_dev/backend-dev
             git pull
             cd /home/juanes/repositories/repos_dev
-            docker compose -f docker-compose-dev.yml up -d --no-deps --build dev-backend
+            docker compose -f docker-compose-dev.yml up -d --no-deps --build backend-dev
 
